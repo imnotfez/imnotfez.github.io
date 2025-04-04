@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROBIN DOOL - CURSED FANSITE</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #0f0;
+            font-family: 'Courier New', monospace;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            overflow-x: hidden;
+        }
+        .header {
+            font-size: 3em;
+            text-shadow: 0 0 10px #0f0;
+            animation: glitch 1s infinite;
+        }
+        .gif-container {
+            margin: 20px auto;
+            border: 5px dashed #f00;
+            padding: 10px;
+            max-width: 625px;
+            animation: pulse 5s infinite;
+        }
+        .copypasta {
+            background-color: #111;
+            border-left: 3px solid #f00;
+            padding: 15px;
+            margin: 20px auto;
+            max-width: 600px;
+            text-align: left;
+            font-size: 1.2em;
+        }
+        .footer {
+            margin-top: 50px;
+            font-size: 0.8em;
+            color: #555;
+        }
+        @keyframes glitch {
+            0% { text-shadow: 0 0 10px #0f0; }
+            25% { text-shadow: -5px -5px 10px #f0f; }
+            50% { text-shadow: 5px 5px 10px #0ff; }
+            100% { text-shadow: 0 0 10px #0f0; }
+        }
+        @keyframes pulse {
+            0% { border-color: #f00; }
+            50% { border-color: #0f0; }
+            100% { border-color: #f00; }
+        }
+        .cursor {
+            animation: blink 1s step-end infinite;
+        }
+        @keyframes blink {
+            from, to { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        ROBIN DOOL<span class="cursor">_</span>
+    </div>
+    <p><em>He watches. He waits. He <strong>knows</strong>.</em></p>
+
+    <div class="gif-container">
+        <img src="https://media.discordapp.net/attachments/1149270614805332018/1346437143194636299/IMG_8577.gif?ex=67f0648e&is=67ef130e&hm=1a9f244ce04c9ff8b2ef47a18a043731e111ce4aacbf4d5adc2f75f6c2d903db&=&width=625&height=603" 
+             alt="Cursed Robin Dool GIF" 
+             style="max-width: 100%;">
+        <p>⚠️ <strong>DO NOT RIGHT-CLICK</strong> ⚠️</p>
+    </div>
+
+    <div class="copypasta">
+        <p>Robin Dool is not a man. Robin Dool is a <strong>concept</strong>. A glitch in the matrix. A static whisper in your ear at 3:33 AM.</p>
+        <p>I found him in a corrupted .zip file from 2004. The filename was just <code>HELPME.exe</code>. When I opened it, my screen filled with this GIF—except his eyes followed me. Now he's in my Chrome history. My Spotify Wrapped. My dreams.</p>
+        <p>Last Tuesday, my cat hissed at a blank wall for 6 hours straight. When I checked the security cam footage, there was a single frame—<strong>his face</strong>, stretched across the wallpaper like a screensaver from hell.</p>
+        <p>You think you're safe? Check your task manager. <strong>He's there.</strong></p>
+    </div>
+
+    <div class="footer">
+        <p>This website resists deletion. | Last updated: NEVER | Visitor count: <span id="counter">666</span></p>
+    </div>
+
+    <script>
+        // Cursed counter (always goes up)
+        setInterval(() => {
+            document.getElementById('counter').textContent = 
+                parseInt(document.getElementById('counter').textContent) + 1;
+        }, 1000);
+
+        // Glitch effect on mouseover
+        document.querySelector('.gif-container img').addEventListener('mouseover', function() {
+            this.style.filter = 'hue-rotate(90deg) contrast(200%)';
+            document.body.style.backgroundColor = '#220000';
+        });
+        document.querySelector('.gif-container img').addEventListener('mouseout', function() {
+            this.style.filter = '';
+            document.body.style.backgroundColor = '#000';
+        });
+
+        // Easter egg (view console)
+        console.log("%cYOU SHOULDN'T BE HERE.", "color: red; font-size: 24px;");
+        console.log("Close this tab. Now.");
+    </script>
+</body>
+</html>
